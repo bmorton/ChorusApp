@@ -16,6 +16,28 @@ You choose a mode for each repository, on its page in the app.
 | Observe | Any public address, each one recorded by name | Finding out what a job needs |
 | Open | Any public address | Jobs that need the wider internet |
 
+## What Restricted admits
+
+Restricted is opinionated: it admits what building, signing, notarizing
+and shipping an app ordinarily asks for, so that such a job needs no
+setting up, and nothing beyond that. The whole list:
+
+| Names | Port | What for |
+| --- | --- | --- |
+| GitHub's runner endpoints, as in GitHub only | 443 | Fetching the job, actions, artifacts, releases |
+| `apple.com`, `*.apple.com`, `*.cdn-apple.com` | 443 | App Store Connect, TestFlight, provisioning, Apple's notary service, Xcode's downloads |
+| `api.apple-cloudkit.com` | 443 | The notarization ticket that `stapler` fetches |
+| `notary-submissions-prod.s3-accelerate.amazonaws.com` | 443 | The upload `notarytool` makes: a storage bucket of Apple's at Amazon, and the one name here that is not Apple's own |
+| `timestamp.apple.com` | 80, unencrypted | The timestamp a Developer ID signature needs before it can be notarized |
+| `ocsp.apple.com` | 80, unencrypted | Asking Apple whether a certificate has been revoked |
+| Names you allow | 443 | Whatever your job needs besides |
+
+Apple serves the two unencrypted ones no other way; what they answer is
+signed by Apple, so it does not depend on the connection being private.
+iCloud's own names are left out on purpose.
+
+Chorus's Help menu opens this page.
+
 ## Allowing more names
 
 In Restricted mode you can allow further hostnames for a repository,
