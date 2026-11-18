@@ -1,0 +1,16 @@
+{{/* {{< shot name="overview" alt="…" caption="…" >}}: a screenshot of the
+     app from static/shots, in the light or dark version that matches the
+     page, each at 1x and at 2x for sharp displays. class="narrow" for a
+     small one. The pictures are rendered from the app's own screen
+     catalog against made-up data. */}}
+{{- $name := .Get "name" -}}
+{{- $w := .Get "width" | default "1040" -}}
+{{- $h := .Get "height" | default "660" -}}
+<figure class="shot {{ .Get "class" }}">
+  {{- range $theme := slice "light" "dark" }}
+  <img class="shot-{{ $theme }}" width="{{ $w }}" height="{{ $h }}" alt="{{ $.Get "alt" }}" loading="lazy"
+       src="{{ printf "shots/%s-%s.png" $name $theme | relURL }}"
+       srcset="{{ printf "shots/%s-%s.png" $name $theme | relURL }} 1x, {{ printf "shots/%s-%s@2x.png" $name $theme | relURL }} 2x">
+  {{- end }}
+  {{- with .Get "caption" }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>
