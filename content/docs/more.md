@@ -15,6 +15,8 @@ that you can add it.
   repositories whose files match share one image.
 - Each has its own network mode and its own caches.
 
+{{< shot name="repository-changes" height="900" alt="A repository's page, with two of its settings changed and waiting to be applied." caption="A repository's page. Settings are changed freely and applied together, with one restart of the daemon. This page is in the release after 0.23.0." >}}
+
 Chorus serves private repositories you administer. It does not serve
 public ones, where anyone can open a pull request that would run on
 your Mac.
