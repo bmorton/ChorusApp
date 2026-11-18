@@ -3,26 +3,23 @@ title: Chorus
 layout: hextra-home
 ---
 
-{{< shot name="overview" alt="The Chorus window: two job VMs, one running unit tests and one starting up, above a chart of what Chorus keeps on the Mac's disk." >}}
-
-<div class="hx:mt-6 hx:mb-6">
+<div class="chorus-hero">
+<div>
 {{< hextra/hero-headline >}}
-  Your Mac, as a GitHub Actions runner
+  Your Mac, as a GitHub&nbsp;Actions runner
 {{< /hextra/hero-headline >}}
-</div>
-
-<div class="hx:mb-12">
+<div class="hx:mt-6"></div>
 {{< hextra/hero-subtitle >}}
   A fresh macOS VM for every Xcode job, built from a file in your
   repository, with its network filtered on the Mac you own.
 {{< /hextra/hero-subtitle >}}
-</div>
-
-<div class="hx:mb-6">
+<div class="chorus-hero-actions">
 {{< hextra/hero-button text="Get Started" link="docs/getting-started" >}}
+<a class="chorus-secondary" href="https://github.com/bmorton/ChorusApp/releases/latest">Download for Apple silicon</a>
 </div>
-
-<div class="hx:mt-6"></div>
+</div>
+{{< shot name="overview" alt="The Chorus window: two job VMs, one running unit tests and one starting up, above a chart of what Chorus keeps on the Mac's disk." >}}
+</div>
 
 {{< hextra/feature-grid >}}
   {{< hextra/feature-card title="Getting Started" subtitle="From nothing to one job running in a Chorus VM." link="docs/getting-started" >}}
@@ -33,9 +30,10 @@ layout: hextra-home
   {{< hextra/feature-card title="Troubleshooting" subtitle="What to check, and how to update or remove Chorus." link="docs/troubleshooting" >}}
 {{< /hextra/feature-grid >}}
 
-<div class="hx:mt-16"></div>
-
-## What it is like to use
+<div class="chorus-section">
+<h2>What it is like to use</h2>
+<p class="chorus-lede">Chorus shows you what each job did, and lets you decide what it may do.</p>
+</div>
 
 {{< tabs >}}
 {{< tab name="Where a job's time went" selected=true >}}
