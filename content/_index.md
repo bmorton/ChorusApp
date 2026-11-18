@@ -35,6 +35,8 @@ layout: hextra-home
 <p class="chorus-lede">Chorus shows you what each job did, and lets you decide what it may do.</p>
 </div>
 
+<div class="chorus-shots">
+
 {{< tabs >}}
 {{< tab name="Where a job's time went" selected=true >}}
 Every job gets a profile: how long each stage took, from clone to destroy, and whether the VM was short of CPU or memory.
@@ -57,3 +59,5 @@ Chorus stays out of the way in the menu bar. The number beside its icon is the j
 {{< shot name="menu" class="narrow" width="300" height="208" alt="The Chorus menu-bar panel, listing the job VMs that are running." >}}
 {{< /tab >}}
 {{< /tabs >}}
+
+</div>
