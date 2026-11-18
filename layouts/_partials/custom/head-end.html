@@ -1,5 +1,6 @@
-{{/* Screenshots come in a light and a dark version; the page shows the one
-     that matches its theme. Hextra puts the class "dark" on <html>. */}}
+{{/* The site's own styles, beside the theme's. Hextra puts the class "dark"
+     on <html>; screenshots come in a light and a dark version and the
+     page shows the one that matches. */}}
 <style>
   figure.shot { margin: 1.5rem auto; max-width: 62rem; }
   figure.shot img { width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(128, 128, 128, 0.25); box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18); }
@@ -8,4 +9,22 @@
   figure.shot img.shot-dark { display: none; }
   html.dark figure.shot img.shot-dark { display: block; }
   html.dark figure.shot img.shot-light { display: none; }
+
+  /* The home page's opening: the words on the left, the window on the
+     right, side by side on a wide screen and stacked on a narrow one. */
+  .chorus-hero { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2rem; align-items: center; margin: 1rem 0 3.5rem; }
+  .chorus-hero figure.shot { margin: 0; max-width: none; }
+  .chorus-hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem; align-items: center; margin-top: 1.75rem; }
+  .chorus-hero-actions a.chorus-secondary { font-weight: 500; text-decoration: underline; text-underline-offset: 4px; }
+  @media (min-width: 1024px) {
+    .chorus-hero { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 3rem; margin-top: 2.5rem; }
+  }
+
+  /* A section of the home page below the boxes. */
+  .chorus-section { margin-top: 4.5rem; }
+  .chorus-section h2 { font-size: 1.875rem; line-height: 1.2; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.5rem; }
+  /* The pictures under the tabs take the page's width. */
+  .chorus-shots figure.shot { max-width: none; margin: 1.25rem 0 0; }
+  .chorus-shots figure.shot.narrow { max-width: 300px; }
+  .chorus-section p.chorus-lede { font-size: 1.125rem; opacity: 0.75; margin: 0 0 1.25rem; max-width: 44rem; }
 </style>

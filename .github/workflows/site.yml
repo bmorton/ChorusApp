@@ -40,6 +40,16 @@ jobs:
       - name: Build
         run: hugo --minify
 
+      # A pull request's site, to download and look at before it is
+      # merged: gh run download <run> -n site-preview
+      - name: Keep the site for a look
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: site-preview
+          path: public
+          retention-days: 3
+
       - name: Keep the site for the deploy
         if: github.event_name == 'push'
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
