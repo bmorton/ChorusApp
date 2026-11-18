@@ -53,6 +53,8 @@ from a job, so a workflow cannot widen its own access.
 
 ## Seeing what a job asked for
 
+{{< shot name="vm-traffic-hosts" alt="A job's Traffic tab: each host it asked for, whether it was allowed or refused, and how much went each way." >}}
+
 The app's Traffic tab shows, for each job, the names it asked for and
 the ones that were refused. A step that fails because a download was
 refused shows up there. Either put what it needs into

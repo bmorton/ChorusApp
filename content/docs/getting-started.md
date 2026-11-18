@@ -143,6 +143,8 @@ so adding a tool takes minutes.
 
 `chorus status` and the app show how far a build is.
 
+{{< shot name="overview-image-building" alt="The overview while an image is being built, layer by layer." >}}
+
 ## 6. Run a job
 
 Point a job at the label from step 3:
@@ -158,6 +160,8 @@ jobs:
 
 When the job is queued, Chorus starts a VM for it. The app shows the VM,
 its log, the network names it asked for and where its time went.
+
+{{< shot name="overview" alt="The Chorus window with two job VMs: one running a job, one starting up." >}}
 
 ## Things to know
 
