@@ -1,0 +1,11 @@
+{{/* Screenshots come in a light and a dark version; the page shows the one
+     that matches its theme. Hextra puts the class "dark" on <html>. */}}
+<style>
+  figure.shot { margin: 1.5rem auto; max-width: 62rem; }
+  figure.shot img { width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(128, 128, 128, 0.25); box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18); }
+  figure.shot.narrow { max-width: 22rem; }
+  figure.shot figcaption { margin-top: 0.6rem; text-align: center; font-size: 0.875rem; opacity: 0.7; }
+  figure.shot img.shot-dark { display: none; }
+  html.dark figure.shot img.shot-dark { display: block; }
+  html.dark figure.shot img.shot-light { display: none; }
+</style>
