@@ -25,6 +25,7 @@ setting up, and nothing beyond that. The whole list:
 | Names | Port | What for |
 | --- | --- | --- |
 | GitHub's runner endpoints, as in GitHub only | 443 | Fetching the job, actions, artifacts, releases |
+| `uploads.github.com`, also in GitHub only | 443 | Publishing a release's files from a job |
 | `apple.com`, `*.apple.com`, `*.cdn-apple.com` | 443 | App Store Connect, TestFlight, provisioning, Apple's notary service, Xcode's downloads |
 | `api.apple-cloudkit.com` | 443 | The notarization ticket that `stapler` fetches |
 | `notary-submissions-prod.s3-accelerate.amazonaws.com` | 443 | The upload `notarytool` makes: a storage bucket of Apple's at Amazon, and the one name here that is not Apple's own |

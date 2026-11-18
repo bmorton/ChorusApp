@@ -187,10 +187,16 @@ The daemon's log is `~/Library/Logs/Chorus/chorusd.log`.
 
 ## Updating and removing
 
-To update, quit Chorus, replace `Chorus.app` with the new one and open it.
-The daemon is still the old one at that point, and the overview says so:
-click **Restart Daemon**. If jobs are running it waits for them to finish
-first, taking no new ones meanwhile.
+Chorus looks for a new version once a day and offers it when there is
+one; Settings has the switch, and **Check for Updates…** looks now. After
+an update Chorus restarts its daemon by itself, once no job is running
+and no image is being built. This is in Chorus 0.22.0 and later; an
+older one is updated by hand, once.
+
+To update by hand, quit Chorus, replace `Chorus.app` with the new one and
+open it. The daemon is still the old one at that point, and the overview
+says so: click **Restart Daemon**. If jobs are running it waits for them
+to finish first, taking no new ones meanwhile.
 
 `chorus version` shows the tool's build and the running daemon's.
 
