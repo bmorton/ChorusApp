@@ -1,0 +1,27 @@
+version: 2
+
+updates:
+  # GitHub Actions. Actions are pinned to commit SHAs (zizmor checks this);
+  # Dependabot keeps the version comment next to the SHA up to date.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    groups:
+      actions:
+        patterns:
+          - "*"
+    cooldown:
+      default-days: 7
+
+  # The site's theme, a Hugo module pinned in go.mod.
+  - package-ecosystem: "gomod"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    cooldown:
+      default-days: 7
