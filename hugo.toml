@@ -9,6 +9,9 @@ enableInlineShortcodes = true
     path = "github.com/imfing/hextra"
 
 [markup]
+  # The home page lays out its headline with HTML around shortcodes.
+  [markup.goldmark.renderer]
+    unsafe = true
   [markup.highlight]
     noClasses = false
 
