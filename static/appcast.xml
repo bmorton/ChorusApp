@@ -3,15 +3,15 @@
     <channel>
         <title>Chorus</title>
         <item>
-            <title>0.27.1</title>
-            <pubDate>Thu, 19 Nov 2026 00:52:21 -0800</pubDate>
+            <title>0.28.0</title>
+            <pubDate>Thu, 19 Nov 2026 01:43:18 -0800</pubDate>
             <link>https://chorus.bmorton.dev/</link>
-            <sparkle:fullReleaseNotesLink>https://github.com/bmorton/ChorusApp/releases/tag/v0.27.1</sparkle:fullReleaseNotesLink>
-            <sparkle:version>211</sparkle:version>
-            <sparkle:shortVersionString>0.27.1</sparkle:shortVersionString>
+            <sparkle:fullReleaseNotesLink>https://github.com/bmorton/ChorusApp/releases/tag/v0.28.0</sparkle:fullReleaseNotesLink>
+            <sparkle:version>213</sparkle:version>
+            <sparkle:shortVersionString>0.28.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/bmorton/ChorusApp/releases/download/v0.27.1/Chorus-0.27.1.zip" length="17742359" type="application/octet-stream" sparkle:edSignature="QatT7PHSWt1fg3ZcpYuwObHrIHtWzwx1FLOzBGwJX2sdrX90bUbHDDnbNc0tt0aA8tYQAfzAY2SuUuPJm/XZAA=="/>
+            <enclosure url="https://github.com/bmorton/ChorusApp/releases/download/v0.28.0/Chorus-0.28.0.zip" length="17768636" type="application/octet-stream" sparkle:edSignature="ZrASTw/YFkjXu5UKTMpd2jsiyAs5hyHxjVxlIdm1MZCwhAbhJRoTp7DzP9QpVPLXRW1sv9H0cs5Rw4VXQi4nDg=="/>
         </item>
     </channel>
 </rss>
