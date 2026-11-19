@@ -5,7 +5,7 @@
      catalog against made-up data. */}}
 {{- $name := .Get "name" -}}
 {{- $w := .Get "width" | default "1040" -}}
-{{- $h := .Get "height" | default "660" -}}
+{{- $h := .Get "height" | default "712" -}}
 <figure class="shot {{ .Get "class" }}">
   {{- range $theme := slice "light" "dark" }}
   <img class="shot-{{ $theme }}" width="{{ $w }}" height="{{ $h }}" alt="{{ $.Get "alt" }}" loading="lazy"

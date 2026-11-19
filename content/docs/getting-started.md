@@ -114,9 +114,10 @@ Chorus reads them from there and nowhere else.
 Within a few minutes the app's overview says the repository's lock pins an
 image that is not built.
 
-To serve another repository from the same Mac, click **Add Repository…**
-in the sidebar and give its address. If the GitHub App is not installed
-on it yet, GitHub opens so that you can add it. The repositories share
+To serve another repository from the same Mac, click **+** at the top
+of the sidebar and tick it in the list. If the GitHub App is not
+installed on it yet, **Choose More on GitHub…** opens GitHub so that you
+can add it. The repositories share
 the Mac's two VMs; each needs its own `.chorus/image.yaml` and lock, and
 two repositories with the same files share one image.
 
