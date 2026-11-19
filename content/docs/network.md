@@ -61,6 +61,7 @@ iCloud's own names are left out on purpose.
 
 | Names | Port | What for |
 | --- | --- | --- |
+| `www.apple.com` | 443 | Apple's Developer ID intermediate certificates, which a release job downloads before it signs. This admits Apple's website as a whole: the filter is by name. |
 | `appstoreconnect.apple.com` | 443 | Apple's notary service |
 | `api.apple-cloudkit.com` | 443 | The notarization ticket that `stapler` fetches |
 | `notary-submissions-prod.s3-accelerate.amazonaws.com` | 443 | The upload `notarytool` makes: a storage bucket of Apple's at Amazon, and the one name here that is not Apple's own |
