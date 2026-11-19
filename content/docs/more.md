@@ -5,9 +5,14 @@ weight: 5
 
 ## Several repositories on one Mac
 
-Click **Add Repository…** in the app's sidebar and give the repository's
-address. If your GitHub App is not installed on it yet, GitHub opens so
-that you can add it.
+Click **+** at the top of the app's sidebar. It lists the repositories
+your GitHub App is installed on: tick the ones to add, and what their
+jobs may reach. If the one you want is not listed, **Choose More on
+GitHub…** opens GitHub so that you can install the App on it.
+
+A repository's page has its name and state in the toolbar. The **…**
+button there, and a right-click on the repository in the sidebar, hold
+the rest: rebuild its image, clear its cache, or stop serving it.
 
 - The repositories share the Mac's VMs, first come, first served. macOS
   allows two macOS VMs at once, so two jobs run at a time.
@@ -15,7 +20,7 @@ that you can add it.
   repositories whose files match share one image.
 - Each has its own network mode and its own caches.
 
-{{< shot name="repository-changes" height="900" alt="A repository's page, with two of its settings changed and waiting to be applied." caption="A repository's page. Settings are changed freely and applied together, with one restart of the daemon. This page is in the release after 0.23.0." >}}
+{{< shot name="repository-changes" height="952" alt="A repository's page, with two of its settings changed and waiting to be applied." caption="A repository's page. Settings are changed freely and applied together, with one restart of the daemon. This page is in the release after 0.23.0." >}}
 
 Chorus serves private repositories you administer. It does not serve
 public ones, where anyone can open a pull request that would run on
@@ -34,6 +39,6 @@ which one it needs and takes the `.xip` once you have downloaded it.
 
 ## Taking a Mac out for a while
 
-**Stop Taking Jobs** in the app, or `chorus drain`, lets running jobs
+**Stop Taking Jobs** in This Mac's toolbar, or `chorus drain`, lets running jobs
 finish and takes no new ones, so the other Macs carry the load.
 `chorus resume` ends it.

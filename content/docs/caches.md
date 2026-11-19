@@ -44,3 +44,17 @@ on Chorus: the volume is already there when the job starts.
 
 `chorus cache list` shows each cache volume and why the last one was
 kept or thrown away.
+
+## Starting a cache over
+
+A cache that has gone wrong can be thrown away: on the repository's page
+in the app, **…** in the toolbar, then **Clear Cache…**; or
+
+```
+chorus cache clear <runs-on label>
+```
+
+Its next jobs build from nothing, and the next push to the default
+branch fills it again. Other repositories' caches are kept. It is
+refused while one of that repository's jobs is running.
+
