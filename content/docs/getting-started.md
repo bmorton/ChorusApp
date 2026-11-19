@@ -56,8 +56,9 @@ Follow the setup page in the Chorus window.
 1. **This Mac.** Anything missing is listed with what to do about it. For
    Softnet it gives a command to run in Terminal that asks for your Mac
    password once. Click **Check Again** when done.
-2. **What jobs may reach.** Leave this on GitHub only unless your jobs
-   need the rest of the internet.
+2. **What jobs may reach.** GitHub alone is enough for most test jobs.
+   Tick **Signing and notarizing** if the repository releases a signed
+   app. You can change this later on the repository's page.
 3. **Create a GitHub App.** Chorus opens GitHub in your browser to create
    an App that belongs to you, then asks you to install it on one
    repository. It may register runners there and read the repository's

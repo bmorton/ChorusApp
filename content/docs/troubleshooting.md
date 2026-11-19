@@ -19,8 +19,10 @@ The daemon's log is `~/Library/Logs/Chorus/chorusd.log`.
 - **A job waits and never starts.** Chorus runs in your login session:
   jobs wait while the Mac is asleep or logged out. The overview also
   says when an image is still building.
-- **A step fails downloading something.** In GitHub only mode a job
-  reaches GitHub and nothing else. See [Network](../network).
+- **A step fails downloading something, or signing stops.** A job
+  reaches GitHub and what you ticked for its repository, and nothing
+  else. The failed job's page lists what it was refused and which box
+  would admit it. See [Network](../network).
 - **A job stops partway.** A VM is force-stopped after its time limit,
   which the overview shows.
 - **The image will not build.** The overview's **Needs You** list says
