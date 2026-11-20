@@ -130,7 +130,8 @@ GitHub then gives each job to one of the Macs.
 If this Mac's library lacks the Xcode the lock pins, as on a second Mac
 that joins a repository already set up, **Needs You** says which one it
 needs. **Download Xcode from Apple** opens Apple's download page, and
-**Add Xcode Archive…** takes the `.xip` once it has downloaded.
+**Add Xcode Archive…** takes the `.xip` once it has downloaded. The
+app's [Library](../image/#the-library) page shows what the Mac keeps.
 
 Then click **Build Image**, or run:
 
