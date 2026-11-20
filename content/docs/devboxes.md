@@ -63,7 +63,7 @@ the Mac, never over the network.
 ## Chorus puts no secret in it
 
 A job is handed one single-use registration and nothing else. A devbox
-is handed nothing at all. Whatever you sign in to inside it is on its
+is handed no secret at all. Whatever you sign in to inside it is on its
 disk, stays there while it lives, and is deleted with it. An agent
 working in the box can use those sign-ins, so the network mode is what
 bounds where it can send them: give a box only what its work needs.
@@ -120,9 +120,38 @@ A path in the box is absolute, or starts from its home folder. One file
 is copied at a time. Treat what comes out of a box as you would a
 download: it is whatever the box put there.
 
+## SSH
+
+For an editor that works over SSH, for `scp` and `rsync`, or simply
+because you prefer it:
+
+```sh
+chorus box ssh agent                    # ssh into it
+chorus box ssh-config >> ~/.ssh/config  # then: ssh agent.chorus
+```
+
+After the second line, anything that speaks SSH reaches the box as
+`<name>.chorus`. Run it again when you make another box.
+
+This is still not the network. `ssh` on your Mac talks to the box
+through Chorus, the same way `chorus box shell` does, and nothing in
+the box listens for a connection. It works only from the Mac the box is
+on.
+
+- Chorus keeps one key for devboxes, on your Mac, and adds its public
+  half to the box's `authorized_keys`. That is the one thing Chorus
+  writes into a box, and it is not a secret.
+- Your SSH agent is not forwarded, and neither is X11 or any port. A
+  box is where an agent works unattended, and each of those would give
+  it a way back to your Mac. That includes `-L`: forwarding a port from
+  the box to your Mac is off for now.
+- Connecting starts a box that is not running, and counts as a terminal
+  being open, so the box is not suspended for sitting idle while you
+  are connected.
+
 ## Not yet
 
-- SSH, for editors that connect that way.
+
 - A window onto the box's screen.
 - A time after which a box deletes itself.
 - Your repository's cache volumes inside a devbox.
