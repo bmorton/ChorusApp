@@ -27,8 +27,12 @@ chorus box create agent
 chorus box shell agent
 ```
 
-`create` clones a repository's image: the first repository this Mac
-serves, or the one you name with `-profile <runs-on name>`. `shell`
+`create` clones a repository's image: the one you name with `-profile
+<runs-on name>`, or else the one you chose for new devboxes, or else
+the first this Mac serves. Choose with `chorus box default <runs-on
+name>`, or "Use for New Devboxes" in a repository's menu in the app. A
+repository can exist only for this: one whose `.chorus/image.yaml`
+describes the machine you like to work in, and which never sends a job. `shell`
 starts the box and gives you a terminal in it. Sign in to your agent and
 to GitHub there, as you would on a new Mac.
 
