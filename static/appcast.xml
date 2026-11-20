@@ -3,15 +3,27 @@
     <channel>
         <title>Chorus</title>
         <item>
-            <title>0.33.0</title>
-            <pubDate>Thu, 19 Nov 2026 22:52:43 -0800</pubDate>
+            <title>0.34.0</title>
+            <pubDate>Fri, 20 Nov 2026 07:37:26 -0800</pubDate>
             <link>https://chorus.bmorton.dev/</link>
-            <sparkle:fullReleaseNotesLink>https://github.com/bmorton/ChorusApp/releases/tag/v0.33.0</sparkle:fullReleaseNotesLink>
-            <sparkle:version>234</sparkle:version>
-            <sparkle:shortVersionString>0.33.0</sparkle:shortVersionString>
+            <sparkle:fullReleaseNotesLink>https://github.com/bmorton/ChorusApp/releases/tag/v0.34.0</sparkle:fullReleaseNotesLink>
+            <sparkle:version>240</sparkle:version>
+            <sparkle:shortVersionString>0.34.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<style>:root{color-scheme:light dark}body{font:13px -apple-system,sans-serif;line-height:1.45;margin:12px 14px}h2{font-size:15px;margin:14px 0 2px}h2:first-of-type{margin-top:0}h3{font-size:11px;text-transform:uppercase;letter-spacing:.04em;opacity:.6;margin:10px 0 2px}ul{margin:0;padding-left:18px}li{margin:2px 0}code{font:12px ui-monospace,monospace}</style>
+<h2>0.34.0</h2>
+<h3>New</h3>
+<ul>
+<li>A devbox can be given a time to live</li>
+<li>A devbox's page shows how to reach it over SSH</li>
+<li>Choose which repository new devboxes are made from</li>
+<li>This Mac shows the VM a devbox holds</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Setup says a Mac can serve several repositories</li>
+</ul>
 <h2>0.33.0</h2>
 <h3>New</h3>
 <ul>
@@ -43,14 +55,8 @@
 <ul>
 <li>A devbox's terminal shows characters and colours as the Mac's does</li>
 </ul>
-<h2>0.30.0</h2>
-<h3>New</h3>
-<ul>
-<li>Devboxes, made and used from the command line</li>
-<li>The app shows devboxes, makes one and opens a terminal in it</li>
-</ul>
 ]]></description>
-            <enclosure url="https://github.com/bmorton/ChorusApp/releases/download/v0.33.0/Chorus-0.33.0.zip" length="18090644" type="application/octet-stream" sparkle:edSignature="EGc6JY9yaF5i6U/vjQMwUAGK+WyJvc7oykEi7aNtJHxiFMR+QeEDZaNeKCBqRM1BXZbAJ2GYLmsk8hOk3VN9CQ=="/>
+            <enclosure url="https://github.com/bmorton/ChorusApp/releases/download/v0.34.0/Chorus-0.34.0.zip" length="18116060" type="application/octet-stream" sparkle:edSignature="FHdtTOsxLW/6ZTWl2vE6GmLNi+IFs6aNtPGZ6Mosx9Lh11etEL6aEpB7Z1aXIfKmmFzEs61THLXJEM4mz9ivCA=="/>
         </item>
     </channel>
 </rss>
