@@ -32,11 +32,14 @@ serves, or the one you name with `-profile <runs-on name>`. `shell`
 starts the box and gives you a terminal in it. Sign in to your agent and
 to GitHub there, as you would on a new Mac.
 
-The terminal is a session that is kept. Close the window, or lose the
-connection, and what was running carries on; `chorus box shell agent`
-again brings you back to it. The session is `screen`, so Control-A then
-D leaves it running and returns you to your Mac. `chorus box shell
--plain agent` gives an ordinary shell that ends with the window instead.
+The terminal is an ordinary login shell, and it ends when you close
+the window, taking what was running in it along. For work that should
+carry on with no window open, such as an agent left to finish a task,
+run a terminal multiplexer such as tmux inside the box and start the
+work there; `chorus box shell agent` and then `tmux attach` brings you
+back to it. macOS has no tmux of its own, so it has to be in the
+repository's image or installed in the box. Suspending a box keeps
+everything in it, a tmux session included.
 
 ## What a devbox can reach
 
