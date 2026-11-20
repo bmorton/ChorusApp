@@ -3,15 +3,52 @@
     <channel>
         <title>Chorus</title>
         <item>
-            <title>0.31.0</title>
-            <pubDate>Thu, 19 Nov 2026 20:49:51 -0800</pubDate>
+            <title>0.32.0</title>
+            <pubDate>Thu, 19 Nov 2026 21:22:28 -0800</pubDate>
             <link>https://chorus.bmorton.dev/</link>
-            <sparkle:fullReleaseNotesLink>https://github.com/bmorton/ChorusApp/releases/tag/v0.31.0</sparkle:fullReleaseNotesLink>
-            <sparkle:version>224</sparkle:version>
-            <sparkle:shortVersionString>0.31.0</sparkle:shortVersionString>
+            <sparkle:fullReleaseNotesLink>https://github.com/bmorton/ChorusApp/releases/tag/v0.32.0</sparkle:fullReleaseNotesLink>
+            <sparkle:version>227</sparkle:version>
+            <sparkle:shortVersionString>0.32.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/bmorton/ChorusApp/releases/download/v0.31.0/Chorus-0.31.0.zip" length="18063044" type="application/octet-stream" sparkle:edSignature="9M6uw0UjmAjgU8/+0rApQKAFULMEPfAKlmXQfVs36GdFxUYn1GdJY1iEDZf4ayf1GSYPMZm/E61K7C4b9LOOBw=="/>
+            <description><![CDATA[<style>:root{color-scheme:light dark}body{font:13px -apple-system,sans-serif;line-height:1.45;margin:12px 14px}h2{font-size:15px;margin:14px 0 2px}h2:first-of-type{margin-top:0}h3{font-size:11px;text-transform:uppercase;letter-spacing:.04em;opacity:.6;margin:10px 0 2px}ul{margin:0;padding-left:18px}li{margin:2px 0}code{font:12px ui-monospace,monospace}</style>
+<h2>0.32.0</h2>
+<h3>New</h3>
+<ul>
+<li>Ssh into a devbox, through the Mac and never over the network</li>
+<li>The update window says what is new</li>
+</ul>
+<h2>0.31.0</h2>
+<h3>New</h3>
+<ul>
+<li>A devbox's terminal opens with a greeting</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>A devbox's terminal shows characters and colours as the Mac's does</li>
+</ul>
+<h2>0.30.0</h2>
+<h3>New</h3>
+<ul>
+<li>Devboxes, made and used from the command line</li>
+<li>The app shows devboxes, makes one and opens a terminal in it</li>
+</ul>
+<h2>0.29.0</h2>
+<h3>New</h3>
+<ul>
+<li>A Library page shows what this Mac keeps to build images from</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>A repository keeps taking jobs after GitHub fails a poll</li>
+</ul>
+<h2>0.28.1</h2>
+<h3>Fixed</h3>
+<ul>
+<li>The toolbar's way to GitHub is a button like the others</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/bmorton/ChorusApp/releases/download/v0.32.0/Chorus-0.32.0.zip" length="18085629" type="application/octet-stream" sparkle:edSignature="c54iOizXbfM5S9Kev8pHRCdoBwpW0UrQxuLbvWTnTCFTx9q8etkmch8/sHnIAJZMikANwobiuscIh0Xdw6xkDw=="/>
         </item>
     </channel>
 </rss>
