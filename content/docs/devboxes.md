@@ -101,6 +101,19 @@ suspended first and carried on afterwards. If the Mac itself restarts or
 loses power, the box is shut down: its disk is kept, and what was
 running in it is not.
 
+A box is kept until you delete it, unless you give it a time to live
+when you make it:
+
+```sh
+chorus box create -ttl 7d scratch
+```
+
+or the **Delete** choice in the app's New Devbox sheet. Once that time
+has passed, Chorus deletes the box, with everything in it and whatever
+you signed in to there, at the first moment it is not running. A box
+you are working in is not deleted under you; it goes after it is
+suspended or shut down. Its page says when.
+
 ## One of your two VMs
 
 Apple allows two macOS VMs on a Mac. A running devbox is one of them, so
@@ -159,5 +172,4 @@ on.
 
 
 - A window onto the box's screen.
-- A time after which a box deletes itself.
 - Your repository's cache volumes inside a devbox.
