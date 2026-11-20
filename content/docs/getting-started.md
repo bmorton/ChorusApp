@@ -60,9 +60,11 @@ Follow the setup page in the Chorus window.
    Tick **Signing and notarizing** if the repository releases a signed
    app. You can change this later on the repository's page.
 3. **Create a GitHub App.** Chorus opens GitHub in your browser to create
-   an App that belongs to you, then asks you to install it on one
-   repository. It may register runners there and read the repository's
-   code and workflow runs. Its key stays on this Mac.
+   an App that belongs to you, then asks you to install it on the
+   repositories this Mac should serve. It may register runners there and
+   read their code and workflow runs. Its key stays on this Mac. Setup
+   starts with one repository; add the others afterwards from the **+**
+   at the top of the sidebar.
 4. **Start the daemon.** Click **Start Daemon at Login**. macOS may tell
    you a background item was added; that is the daemon.
 
