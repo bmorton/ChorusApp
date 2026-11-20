@@ -32,6 +32,10 @@ serves, or the one you name with `-profile <runs-on name>`. `shell`
 starts the box and gives you a terminal in it. Sign in to your agent and
 to GitHub there, as you would on a new Mac.
 
+The name you give a box is its name inside too: its prompt says
+`agent`, not the image's own name. A box made with an earlier version takes its
+name the next time it starts.
+
 The terminal is an ordinary login shell, and it ends when you close
 the window, taking what was running in it along. For work that should
 carry on with no window open, such as an agent left to finish a task,
@@ -139,8 +143,10 @@ the box listens for a connection. It works only from the Mac the box is
 on.
 
 - Chorus keeps one key for devboxes, on your Mac, and adds its public
-  half to the box's `authorized_keys`. That is the one thing Chorus
-  writes into a box, and it is not a secret.
+  half to the box's `authorized_keys`. It is not a secret.
+- When you log in, the box greets you as `chorus box shell` does. For
+  SSH that greeting is the box's `/etc/motd`, which Chorus writes as
+  you connect; `touch ~/.hushlogin` in the box silences it.
 - Your SSH agent is not forwarded, and neither is X11 or any port. A
   box is where an agent works unattended, and each of those would give
   it a way back to your Mac. That includes `-L`: forwarding a port from
