@@ -12,6 +12,7 @@ Chorus is in beta.
   {{< card link="image" title="The Image" subtitle="macOS, Xcode, simulators and tools." >}}
   {{< card link="network" title="Network" subtitle="What a job may reach." >}}
   {{< card link="caches" title="Caches" subtitle="Warm builds, kept safe." >}}
+  {{< card link="devboxes" title="Devboxes" subtitle="A VM of your own, for an agent to work in." >}}
   {{< card link="more" title="More Repositories and Macs" subtitle="Several repositories; shared jobs." >}}
   {{< card link="troubleshooting" title="Troubleshooting" subtitle="Checks, updating and removing." >}}
   {{< card link="https://github.com/bmorton/ChorusApp/releases" title="Download" subtitle="Chorus.app, signed and notarized." >}}

@@ -1,6 +1,6 @@
 ---
 title: More repositories and Macs
-weight: 5
+weight: 6
 ---
 
 ## Several repositories on one Mac
