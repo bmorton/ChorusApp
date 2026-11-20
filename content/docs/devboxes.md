@@ -9,10 +9,18 @@ It is made for running a coding agent such as Claude Code somewhere it
 can build your app and cannot reach your Mac, your network or your
 other work.
 
-For now a devbox is made and used from the command line. The app does
-not show devboxes yet; `chorus status` says when one holds a VM.
+{{< shot name="devbox" alt="A devbox's page in Chorus: running, holding one of two VMs, in Restricted mode, with the command that opens a terminal in it." >}}
 
 ## Make one and open a terminal
+
+In the app, the **+** at the head of the sidebar has **New Devbox…**.
+Name it, choose the repository whose image to clone, tick what it may
+reach, and create it. Its page has **Open Terminal**, which starts it and
+opens Terminal on it.
+
+{{< shot name="new-devbox" class="narrow" width="560" height="445" alt="The New Devbox sheet: a name, a repository, Restricted or Observe with groups to tick, and when to suspend it." >}}
+
+The same from the command line:
 
 ```sh
 chorus box create agent
@@ -111,7 +119,6 @@ download: it is whatever the box put there.
 
 ## Not yet
 
-- A page for each devbox in the app.
 - SSH, for editors that connect that way.
 - A window onto the box's screen.
 - A time after which a box deletes itself.
