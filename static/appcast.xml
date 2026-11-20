@@ -3,15 +3,25 @@
     <channel>
         <title>Chorus</title>
         <item>
-            <title>0.32.1</title>
-            <pubDate>Thu, 19 Nov 2026 21:41:07 -0800</pubDate>
+            <title>0.33.0</title>
+            <pubDate>Thu, 19 Nov 2026 22:52:43 -0800</pubDate>
             <link>https://chorus.bmorton.dev/</link>
-            <sparkle:fullReleaseNotesLink>https://github.com/bmorton/ChorusApp/releases/tag/v0.32.1</sparkle:fullReleaseNotesLink>
-            <sparkle:version>230</sparkle:version>
-            <sparkle:shortVersionString>0.32.1</sparkle:shortVersionString>
+            <sparkle:fullReleaseNotesLink>https://github.com/bmorton/ChorusApp/releases/tag/v0.33.0</sparkle:fullReleaseNotesLink>
+            <sparkle:version>234</sparkle:version>
+            <sparkle:shortVersionString>0.33.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<style>:root{color-scheme:light dark}body{font:13px -apple-system,sans-serif;line-height:1.45;margin:12px 14px}h2{font-size:15px;margin:14px 0 2px}h2:first-of-type{margin-top:0}h3{font-size:11px;text-transform:uppercase;letter-spacing:.04em;opacity:.6;margin:10px 0 2px}ul{margin:0;padding-left:18px}li{margin:2px 0}code{font:12px ui-monospace,monospace}</style>
+<h2>0.33.0</h2>
+<h3>New</h3>
+<ul>
+<li>A devbox greets you over SSH too</li>
+<li>A devbox is called inside what you called it</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>This Mac's page stays put while the daemon restarts</li>
+</ul>
 <h2>0.32.1</h2>
 <h3>Fixed</h3>
 <ul>
@@ -39,17 +49,8 @@
 <li>Devboxes, made and used from the command line</li>
 <li>The app shows devboxes, makes one and opens a terminal in it</li>
 </ul>
-<h2>0.29.0</h2>
-<h3>New</h3>
-<ul>
-<li>A Library page shows what this Mac keeps to build images from</li>
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li>A repository keeps taking jobs after GitHub fails a poll</li>
-</ul>
 ]]></description>
-            <enclosure url="https://github.com/bmorton/ChorusApp/releases/download/v0.32.1/Chorus-0.32.1.zip" length="18086739" type="application/octet-stream" sparkle:edSignature="ShjnwJllDsMZlE6jAedd3FEnghG48mPfsI33canlcxT+YK4CXtD5hrsPTI3YbpZmmTq90l4Y8GWHXgqi65T1DA=="/>
+            <enclosure url="https://github.com/bmorton/ChorusApp/releases/download/v0.33.0/Chorus-0.33.0.zip" length="18090644" type="application/octet-stream" sparkle:edSignature="EGc6JY9yaF5i6U/vjQMwUAGK+WyJvc7oykEi7aNtJHxiFMR+QeEDZaNeKCBqRM1BXZbAJ2GYLmsk8hOk3VN9CQ=="/>
         </item>
     </channel>
 </rss>
