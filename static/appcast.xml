@@ -3,15 +3,20 @@
     <channel>
         <title>Chorus</title>
         <item>
-            <title>0.35.0</title>
-            <pubDate>Sat, 21 Nov 2026 16:49:54 -0800</pubDate>
+            <title>0.35.1</title>
+            <pubDate>Mon, 23 Nov 2026 00:25:25 -0800</pubDate>
             <link>https://chorus.bmorton.dev/</link>
-            <sparkle:fullReleaseNotesLink>https://github.com/bmorton/ChorusApp/releases/tag/v0.35.0</sparkle:fullReleaseNotesLink>
-            <sparkle:version>242</sparkle:version>
-            <sparkle:shortVersionString>0.35.0</sparkle:shortVersionString>
+            <sparkle:fullReleaseNotesLink>https://github.com/bmorton/ChorusApp/releases/tag/v0.35.1</sparkle:fullReleaseNotesLink>
+            <sparkle:version>244</sparkle:version>
+            <sparkle:shortVersionString>0.35.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<style>:root{color-scheme:light dark}body{font:13px -apple-system,sans-serif;line-height:1.45;margin:12px 14px}h2{font-size:15px;margin:14px 0 2px}h2:first-of-type{margin-top:0}h3{font-size:11px;text-transform:uppercase;letter-spacing:.04em;opacity:.6;margin:10px 0 2px}ul{margin:0;padding-left:18px}li{margin:2px 0}code{font:12px ui-monospace,monospace}</style>
+<h2>0.35.1</h2>
+<h3>Fixed</h3>
+<ul>
+<li>This Mac says how many repositories need attention, not how many it serves</li>
+</ul>
 <h2>0.35.0</h2>
 <h3>New</h3>
 <ul>
@@ -45,14 +50,8 @@
 <li>After an update the daemon is restarted without a button flashing by</li>
 <li>Ssh into a devbox connects</li>
 </ul>
-<h2>0.32.0</h2>
-<h3>New</h3>
-<ul>
-<li>Ssh into a devbox, through the Mac and never over the network</li>
-<li>The update window says what is new</li>
-</ul>
 ]]></description>
-            <enclosure url="https://github.com/bmorton/ChorusApp/releases/download/v0.35.0/Chorus-0.35.0.zip" length="18122347" type="application/octet-stream" sparkle:edSignature="EajJD0t6Svf7a0yyLc4RWL1rXauiuriwM4dmHDMRWlJm9YlNx5yHzrmr2ZT/JBVhvk4N+CuQQs3MwyPNuK45Aw=="/>
+            <enclosure url="https://github.com/bmorton/ChorusApp/releases/download/v0.35.1/Chorus-0.35.1.zip" length="18122741" type="application/octet-stream" sparkle:edSignature="YqCTwepsnithMS3oytff/eMoYmPke9Bbh1vdFTCpD+AqSZXh2fnHGTo5Pk2cycLfrl/rDmnQNbcGfofATM9pAw=="/>
         </item>
     </channel>
 </rss>
