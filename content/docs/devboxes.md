@@ -118,6 +118,18 @@ you signed in to there, at the first moment it is not running. A box
 you are working in is not deleted under you; it goes after it is
 suspended or shut down. Its page says when.
 
+## The build cache
+
+If the repository keeps [cache volumes](../caches), a devbox made from
+it gets its own copy of the cache, as it was when the box was made, so
+the first build in the box starts warm. The copy is the box's alone:
+nothing written to it reaches a job, it is not refreshed when jobs
+update the repository's cache, and it is deleted with the box. The
+box's page has a **Build cache** line when it has one, and Storage
+counts it with the box.
+
+A repository that names no cache paths gives its devboxes none.
+
 ## One of your two VMs
 
 Apple allows two macOS VMs on a Mac. A running devbox is one of them, so
@@ -176,4 +188,3 @@ on.
 
 
 - A window onto the box's screen.
-- Your repository's cache volumes inside a devbox.
